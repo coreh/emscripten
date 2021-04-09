@@ -6,7 +6,7 @@
 
 var LibraryGLEmulation = {
   // GL emulation: provides misc. functionality not present in OpenGL ES 2.0 or WebGL
-  $GLEmulation__deps: ['$GLImmediateSetup', 'glEnable', 'glDisable', 'glIsEnabled', 'glGetBooleanv', 'glGetIntegerv', 'glGetString', 'glCreateShader', 'glShaderSource', 'glCompileShader', 'glAttachShader', 'glDetachShader', 'glUseProgram', 'glDeleteProgram', 'glBindAttribLocation', 'glLinkProgram', 'glBindBuffer', 'glGetFloatv', 'glHint', 'glEnableVertexAttribArray', 'glDisableVertexAttribArray', 'glVertexAttribPointer', 'glActiveTexture', '$stringToNewUTF8'],
+  $GLEmulation__deps: ['$GLImmediate', '$GLImmediateSetup', 'glEnable', 'glDisable', 'glIsEnabled', 'glGetBooleanv', 'glGetIntegerv', 'glGetString', 'glCreateShader', 'glShaderSource', 'glCompileShader', 'glAttachShader', 'glDetachShader', 'glUseProgram', 'glDeleteProgram', 'glBindAttribLocation', 'glLinkProgram', 'glBindBuffer', 'glGetFloatv', 'glHint', 'glEnableVertexAttribArray', 'glDisableVertexAttribArray', 'glVertexAttribPointer', 'glActiveTexture', '$stringToNewUTF8'],
   $GLEmulation__postset:
 #if USE_CLOSURE_COMPILER
     // Forward declare GL functions that are overridden by GLEmulation here to appease Closure compiler.
